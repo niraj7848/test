@@ -38,6 +38,7 @@ Below are components and the steps to build the development environment for "Inf
 ### Building the project
 #### Using Command Line:
  First go to the project folder (E.g. /home/niraj/infraadminserver/IAS_ProviosingServer) where build.gradle is placed   and run following command
+ 
  `gradle build -x test`
  
 #### Through Eclipse:

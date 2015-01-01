@@ -79,9 +79,10 @@ server.ssl.key-store-type=JKS
 For generating the file "server.jks" and copying the file to predefined location, run following commands
 
 `keytool -genkeypair -alias frontendkey -keyalg RSA -keysize 2048 -dname "CN=Server,OU=Application Development,O=Home,L=Auckland,S=AK,C=NZ" -keypass "interdigital" -storepass "interdigital" -keystore server.jks`
+
 `cp server.jks /opt/interdigital/certificates/frontend`
  
-#### Diable Https
+#### Disable Https
  For disabling https comment out all the lines in the "application.properties" file, which we included for enabling     Https and include the following line
  
  server.port=8080

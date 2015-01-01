@@ -69,7 +69,7 @@ server.ssl.key-alias=frontendkey
 
 server.ssl.key-password=interdigital
 
-server.ssl.key-store=server.jks
+server.ssl.key-store=/opt/interdigital/certificates/frontend/server.jks
 
 server.ssl.key-store-password=interdigital
 

@@ -43,8 +43,8 @@ Below are components and the steps to build the development environment for "Inf
  
 #### Through Eclipse:
  1. Right click on the project and go to "Run As" and the Click on "Gradle build..."
- 2. Type command ":clean :build" on the window.
- 3. Go to argument window and specify "-x text" as program argument and then Click on "Apply" button.
+ 2. Type command ":clean :build" on the Task editor window.
+ 3. Click on "Arguments" tab and specify "-x text" as program argument in the "Program Args" window and then Click on      "Apply" button.
  4. And Click on "Run" button to compile and make war file.
 
 ### Running the project

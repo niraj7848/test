@@ -58,15 +58,32 @@ Below are components and the steps to build the development environment for "Inf
  2. Search for "Application-com.interdigital.infraserver.frontend" or "Application-com.interdigital.infraserver.provisioning".
  3. And Click on "OK".
 
-### Running Front End Server on https
+### Enabling and Disabling Https for Front End Server.
+
+#### Enable Https
  To enable https for Front End Server, we need to provide information about SSL and then Spring Boot will automatically  configure Tomcat for https. We need to include following lines in the file "application.properties".
 
 server.port=8443
-server.ssl.key-alias=tomcat
+
+server.ssl.key-alias=frontendkey
+
 server.ssl.key-password=interdigital
+
 server.ssl.key-store=server.jks
+
 server.ssl.key-store-password=interdigital
+
 server.ssl.key-store-type=JKS 
  
+
+For generating the file "server.jks" and copying the file to predefined location, run following commands
+
+`keytool -genkeypair -alias frontendkey -keyalg RSA -keysize 2048 -dname "CN=Server,OU=Application Development,O=Home,L=Auckland,S=AK,C=NZ" -keypass "interdigital" -storepass "interdigital" -keystore server.jks`
+`cp server.jks /opt/interdigital/certificates/frontend`
+ 
+#### Diable Https
+ For disabling https comment out all the lines in the "application.properties" file, which we included for enabling     Https and include the following line
+ 
+ server.port=8080
  
  

@@ -51,7 +51,7 @@ Below are components and the steps to build the development environment for "Inf
 #### Using Command Line:
  First go to "build\libs" folder inside project folder (E.g. /home/dennis/infraadminserver/IAS_ProviosingServer) and    run the following command
  
- 'java -jar <Name of the Jar>'
+ `java -jar <Name of the Jar>`
  
 #### Through Eclipse:
  1. Right click on the project and go to "Run As" and the Click on "Java Application".
@@ -61,12 +61,12 @@ Below are components and the steps to build the development environment for "Inf
 ### Running Front End Server on https
  To enable https for Front End Server, we need to provide information about SSL and then Spring Boot will automatically  configure Tomcat for https. We need to include following lines in the file "application.properties".
 
-`server.port=8443
- server.ssl.key-alias=tomcat
- server.ssl.key-password=interdigital
- server.ssl.key-store=keystore.p12
- server.ssl.key-store-password=interdigital
- server.ssl.key-store-type=pkcs12` 
+`server.port=8443`
+`server.ssl.key-alias=tomcat`
+`server.ssl.key-password=interdigital`
+`server.ssl.key-store=server.jks`
+`server.ssl.key-store-password=interdigital`
+`server.ssl.key-store-type=JKS` 
  
  
  

@@ -1,6 +1,6 @@
 # Read Me!!!
 
-## Creating environment for development
+## Setting up environment for development
 
 Below are components and the steps to build the development environment for "Infra Admin Server". Infra Admin Server has following two major components,
 
@@ -39,7 +39,8 @@ Below are components and the steps to build the development environment for "Inf
 #### Using Command Line:
  First go to the project folder (E.g. /home/dennis/infraadminserver/IAS_ProviosingServer) where build.gradle is placed  and run the following command
  
- `gradle build -x test`
+ `gradle build` 
+ `gradle build -x test` (If running tests to be skipped. Not Recommended)
  
 #### Through Eclipse:
  1. Right click on the project and go to "Run As" and the Click on "Gradle build..."
